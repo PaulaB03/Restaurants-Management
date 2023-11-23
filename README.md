@@ -76,6 +76,12 @@ Manageri de restaurante interesați de un instrument eficient pentru gestionarea
 
 #### Proritatea cerințelor
 
+<p align="center">
+  <img src="https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-paea/blob/main/roadmap.png">
+</p>
+
 #### Diagrama workflow
 
-https://docs.google.com/document/d/1141S3M3cBLJ1xrmQ-8l2_JjYiqRs3eqeaiGhqHKBAlY/edit
+<p align="center">
+  <img src="https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-paea/blob/main/diagram_workflow.jpg">
+</p>

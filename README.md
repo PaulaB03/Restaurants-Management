@@ -1,6 +1,6 @@
 # Food Delivery App
 
-### Scopul aplicației
+## Scopul aplicației
 
 Serviciile de livrare a mâncării au devenit din ce în ce mai populare, iar există o nevoie pentru o platformă eficientă care să conecteze utilizatorii care doresc să comande mâncare cu proprietarii de restaurante care doresc să gestioneze și să îndeplinească comenzile. Scopul nostru este să creăm o aplicație de livrare a mâncării ușor de utilizat, care să deservească atât clienții, cât și proprietarii de restaurante, oferind o experiență fără cusur pentru comenzi și gestionarea livrărilor.
 
@@ -22,9 +22,9 @@ Familii care doresc să comande mâncare pentru a se bucura de o masă fără a 
 Proprietari de restaurante mici și mijlocii care doresc să își extindă prezența online și să atragă mai mulți clienți.<br/>
 Manageri de restaurante interesați de un instrument eficient pentru gestionarea comenzilor și meniurilor.<br/>
 
-### Cerințe funcționale
+## Cerințe funcționale
 
-#### Utilizatori (Clienți)
+### Utilizatori (Clienți)
 
 - [ ] Înregistrare utilizator
 - [ ] Gestionare profil
@@ -36,7 +36,7 @@ Manageri de restaurante interesați de un instrument eficient pentru gestionarea
 - [ ] Evaluări și recenzii pentru restaurante
 - [ ] Notificări în timp real despre starea comenzii
 
-#### Proprietari de restaurante
+### Proprietari de restaurante
 
 - [ ] Înregistrare restaurant 
 - [ ] Gestionare profil
@@ -47,14 +47,14 @@ Manageri de restaurante interesați de un instrument eficient pentru gestionarea
 - [ ] Comunicare în timp real cu clienții
 - [ ] Analize de performanță
 
-### Cerinte nefuncționale
+## Cerinte nefuncționale
 
 - [ ] Interfețe intuitive pentru utilizatori și proprietarii de restaurante
 - [ ] Autentificare sigură a utilizatorilor, criptare a datelor pentru tranzacții
 - [ ] Stabilitatea sistemului și acuratețea comenzilor
 - [ ] Asigurarea că aplicația poate fi utilizată pe o varietate de dispozitive
 
-### User Stories
+## User Stories
 
 1. Ca utilizator care vrea sa comand mancare prin aplicație, aș dori să pot vedea meniurile restaurantelor, inclusiv imagini cu preparatele, astfel incat sa pot alege cu încredere ce sa comand.
 
@@ -74,13 +74,18 @@ Manageri de restaurante interesați de un instrument eficient pentru gestionarea
 
 9. Ca utilizator care intampina probleme în legătură cu comanda sau aplicația, aș dori să am acces la un sistem de suport pentru clienți unde pot pune întrebări sau prelua informații de contact al reprezentanților, astfel incat sa pot depăși dificultățile apărute și continua utilizarea aplicației în mod eficient.
 
-#### Proritatea cerințelor
+## Backlog
+
+Pentru monitorizrea obiectivelor/cerințelor utilizam aplicația Trello.
+https://trello.com/b/h1FAhJXJ/yummy
+
+### Proritatea cerințelor
 
 <p align="center">
   <img src="https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-paea/blob/main/roadmap.jpg">
 </p>
 
-#### Diagrama workflow
+### Diagrama workflow
 
 <p align="center">
   <img src="https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-paea/blob/main/diagram_workflow.jpg">

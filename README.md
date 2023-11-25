@@ -90,3 +90,9 @@ https://trello.com/b/h1FAhJXJ/yummy
 <p align="center">
   <img src="https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-paea/blob/main/diagram_workflow.jpg">
 </p>
+
+### Customer Journey Map
+
+<p align="center">
+  <img src="https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-paea/blob/main/Customer%20Journey%20Map.jpg">
+</p>

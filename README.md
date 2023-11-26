@@ -85,6 +85,10 @@ https://trello.com/b/h1FAhJXJ/yummy
   <img src="https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-paea/blob/main/roadmap.jpg">
 </p>
 
+<p align="center">
+<img src="https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-paea/blob/main/Roadmap.png">
+</p>
+
 ### Diagrama workflow
 
 <p align="center">
@@ -111,10 +115,4 @@ https://trello.com/b/h1FAhJXJ/yummy
 
 <p align="center">
 <img src="https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-paea/blob/main/Baza%20de%20Date.jpg">
-</p>
-
-### Roadmap
-
-<p align="center">
-<img src="https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-paea/blob/main/Roadmap.png">
 </p>

@@ -96,3 +96,13 @@ https://trello.com/b/h1FAhJXJ/yummy
 <p align="center">
   <img src="https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-paea/blob/main/Customer%20Journey%20Map.jpg">
 </p>
+
+### User Personas
+
+<p align="center">
+  <img src="https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-paea/blob/main/User%20Persona%201.jpg">
+</p>
+
+<p align="center">
+  <img src="https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-paea/blob/main/User%20Persona%202.jpg">
+</p>

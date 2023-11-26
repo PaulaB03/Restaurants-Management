@@ -116,3 +116,9 @@ https://trello.com/b/h1FAhJXJ/yummy
 <p align="center">
 <img src="https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-paea/blob/main/Baza%20de%20Date.jpg">
 </p>
+
+### Diagrama UML
+
+<p align="center">
+<img src="https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-paea/blob/main/UML%20diagram.png">
+</p>

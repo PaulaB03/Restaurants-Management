@@ -106,3 +106,9 @@ https://trello.com/b/h1FAhJXJ/yummy
 <p align="center">
   <img src="https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-paea/blob/main/User%20Persona%202.jpg">
 </p>
+
+### Baza de Date
+
+<p align="center">
+<img src="https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-paea/blob/main/Baza%20de%20Date.jpg">
+</p>

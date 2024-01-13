@@ -1,0 +1,143 @@
+D:\FMI\yummy\backend\bin\Debug\net8.0\appsettings.Development.json
+D:\FMI\yummy\backend\bin\Debug\net8.0\appsettings.json
+D:\FMI\yummy\backend\bin\Debug\net8.0\backend.exe
+D:\FMI\yummy\backend\bin\Debug\net8.0\backend.deps.json
+D:\FMI\yummy\backend\bin\Debug\net8.0\backend.runtimeconfig.json
+D:\FMI\yummy\backend\bin\Debug\net8.0\backend.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\backend.pdb
+D:\FMI\yummy\backend\bin\Debug\net8.0\BCrypt.Net.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\FMI\yummy\backend\obj\Debug\net8.0\backend.csproj.AssemblyReference.cache
+D:\FMI\yummy\backend\obj\Debug\net8.0\backend.GeneratedMSBuildEditorConfig.editorconfig
+D:\FMI\yummy\backend\obj\Debug\net8.0\backend.AssemblyInfoInputs.cache
+D:\FMI\yummy\backend\obj\Debug\net8.0\backend.AssemblyInfo.cs
+D:\FMI\yummy\backend\obj\Debug\net8.0\backend.csproj.CoreCompileInputs.cache
+D:\FMI\yummy\backend\obj\Debug\net8.0\backend.MvcApplicationPartsAssemblyInfo.cs
+D:\FMI\yummy\backend\obj\Debug\net8.0\backend.MvcApplicationPartsAssemblyInfo.cache
+D:\FMI\yummy\backend\obj\Debug\net8.0\staticwebassets.build.json
+D:\FMI\yummy\backend\obj\Debug\net8.0\staticwebassets.development.json
+D:\FMI\yummy\backend\obj\Debug\net8.0\staticwebassets\msbuild.backend.Microsoft.AspNetCore.StaticWebAssets.props
+D:\FMI\yummy\backend\obj\Debug\net8.0\staticwebassets\msbuild.build.backend.props
+D:\FMI\yummy\backend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.backend.props
+D:\FMI\yummy\backend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.backend.props
+D:\FMI\yummy\backend\obj\Debug\net8.0\staticwebassets.pack.json
+D:\FMI\yummy\backend\obj\Debug\net8.0\scopedcss\bundle\backend.styles.css
+D:\FMI\yummy\backend\obj\Debug\net8.0\backend.csproj.CopyComplete
+D:\FMI\yummy\backend\obj\Debug\net8.0\backend.dll
+D:\FMI\yummy\backend\obj\Debug\net8.0\refint\backend.dll
+D:\FMI\yummy\backend\obj\Debug\net8.0\backend.pdb
+D:\FMI\yummy\backend\obj\Debug\net8.0\backend.genruntimeconfig.cache
+D:\FMI\yummy\backend\obj\Debug\net8.0\ref\backend.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\Azure.Core.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\Azure.Identity.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\System.Memory.Data.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\FMI\yummy\backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\appsettings.Development.json
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\appsettings.json
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\backend.exe
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\backend.deps.json
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\backend.runtimeconfig.json
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\backend.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\backend.pdb
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\Azure.Core.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\Azure.Identity.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\BCrypt.Net.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\System.Memory.Data.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\obj\Debug\net8.0\backend.csproj.AssemblyReference.cache
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\obj\Debug\net8.0\backend.GeneratedMSBuildEditorConfig.editorconfig
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\obj\Debug\net8.0\backend.AssemblyInfoInputs.cache
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\obj\Debug\net8.0\backend.AssemblyInfo.cs
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\obj\Debug\net8.0\backend.csproj.CoreCompileInputs.cache
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\obj\Debug\net8.0\backend.MvcApplicationPartsAssemblyInfo.cs
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\obj\Debug\net8.0\backend.MvcApplicationPartsAssemblyInfo.cache
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\obj\Debug\net8.0\backend.sourcelink.json
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\obj\Debug\net8.0\staticwebassets.build.json
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\obj\Debug\net8.0\staticwebassets.development.json
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\obj\Debug\net8.0\staticwebassets\msbuild.backend.Microsoft.AspNetCore.StaticWebAssets.props
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\obj\Debug\net8.0\staticwebassets\msbuild.build.backend.props
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.backend.props
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.backend.props
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\obj\Debug\net8.0\staticwebassets.pack.json
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\obj\Debug\net8.0\scopedcss\bundle\backend.styles.css
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\obj\Debug\net8.0\backend.csproj.CopyComplete
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\obj\Debug\net8.0\backend.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\obj\Debug\net8.0\refint\backend.dll
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\obj\Debug\net8.0\backend.pdb
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\obj\Debug\net8.0\backend.genruntimeconfig.cache
+D:\FMI\Anul 3\IS\proiect-inginerie-software-paea\backend\obj\Debug\net8.0\ref\backend.dll

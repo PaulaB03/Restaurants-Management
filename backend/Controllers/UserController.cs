@@ -1,8 +1,10 @@
 ﻿using backend.Data;
 using backend.Models;
 using backend.Services;
-using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
@@ -14,13 +16,13 @@ namespace backend.Controllers
     {
         private readonly DataContext _context;
         private readonly IConfiguration _configuration;
-        private readonly UserService _userService;
+        private readonly PasswordService _passwordService;
 
-        public UserController(DataContext context, IConfiguration configuration, UserService userService)
+        public UserController(DataContext context, IConfiguration configuration, PasswordService passwordService)
         {
             _context = context;
             _configuration = configuration;
-            _userService = userService;
+            _passwordService = passwordService;
         }
 
         // POST: api/user/register
@@ -30,7 +32,7 @@ namespace backend.Controllers
             try
             {
                 // Validate the password
-                _userService.ValidatePasswordRequirments(user.Password);
+                _passwordService.ValidatePasswordRequirments(user.Password);
 
                 // Check if email is unique
                 if (_context.Users.Any(u => u.Email == user.Email))
@@ -45,7 +47,7 @@ namespace backend.Controllers
                 }
 
                 // Encrypt the password before storing it
-                user.Password = _userService.HashPassword(user.Password);
+                user.Password = _passwordService.HashPassword(user.Password);
 
                 // Set user role
                 user.Role = UserRole.user;
@@ -66,6 +68,22 @@ namespace backend.Controllers
 
         }
 
+        // POST: api/user/login
+        [HttpPost("login")]
+        public ActionResult<string> Login(Login login)
+        {
+            var user = _context.Users.FirstOrDefault(u => u.Email == login.Email);
+
+            if (user == null || !_passwordService.VerifyPassword(login.Password, user.Password))
+            {
+                return Unauthorized("Invalid email or password");
+            }
+
+            // Return a JWT token upon successful login
+            var token = GenerateJwtToken(user);
+            return Ok(new { Token = token });
+        }
+
         // GET: api/user/id
         [HttpGet("{id}")]
         public ActionResult<User> GetUser(int id)
@@ -80,22 +98,54 @@ namespace backend.Controllers
             return Ok(user);
         }
 
-        // POST: api/user/login
-        [HttpPost("login")]
-        public ActionResult<User> Login(Model.Login login)
+        // PUT: api/user/updateRole/{id}
+        [HttpPut("updateRole/{id}")]
+        public async Task<ActionResult<User>> UpdateUserRole(int id, UserRole newRole)
         {
-            var user = _context.Users.FirstOrDefault(u => u.Email == login.Email);
-
-            if (user == null || !_userService.VerifyPassword(login.Password, user.Password))
+            try
             {
-                return Unauthorized("Invalid email or password");
+                var user = await _context.Users.FindAsync(id);
+
+                if (user == null)
+                {
+                    return NotFound();
+                }
+
+                // Update user role
+                user.Role = newRole;
+                await _context.SaveChangesAsync();
+
+                return Ok(user);
             }
-
-            // Return user data without password
-            user.Password = null;
-
-            return Ok(user);
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error");
+            }
         }
 
+
+        private string GenerateJwtToken(User user)
+        {
+            var claims = new[]
+            {
+                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                new Claim(ClaimTypes.Name, user.Username),
+                new Claim(ClaimTypes.Role, user.Role.ToString())
+            };
+
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Secret"]));
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+            var expires = DateTime.Now.AddHours(Convert.ToDouble(_configuration["Jwt:ExpireHours"]));
+
+            var token = new JwtSecurityToken(
+                _configuration["Jwt:ValidIssuer"],
+                _configuration["Jwt:ValidAudience"],
+                claims,
+                expires: expires,
+                signingCredentials: creds
+            );
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
     }
 }

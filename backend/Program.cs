@@ -51,6 +51,7 @@ builder.Services.AddAuthentication(options =>
 
 // Services
 builder.Services.AddTransient<IAuthService, AuthService>();
+builder.Services.AddTransient<IProductService, ProductService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -68,6 +69,7 @@ builder.Services.AddSwaggerGen(option =>
 
     option.OperationFilter<SecurityRequirementsOperationFilter>();
 });
+
 
 var app = builder.Build();
 

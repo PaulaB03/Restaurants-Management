@@ -5278,19 +5278,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\balan\\.nuget\\packages\\": {}
+    "C:\\Users\\Ana\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FMI\\Anul 3\\Proiect IS\\backend\\backend.csproj",
+      "projectUniqueName": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\backend.csproj",
       "projectName": "backend",
-      "projectPath": "D:\\FMI\\Anul 3\\Proiect IS\\backend\\backend.csproj",
-      "packagesPath": "C:\\Users\\balan\\.nuget\\packages\\",
-      "outputPath": "D:\\FMI\\Anul 3\\Proiect IS\\backend\\obj\\",
+      "projectPath": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\backend.csproj",
+      "packagesPath": "C:\\Users\\Ana\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\balan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ana\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5310,6 +5310,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -5376,7 +5381,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -37,6 +37,18 @@ namespace backend.Services
 
         public async Task<bool> Register(Register user)
         {
+            // Create address
+            var address = new Address
+            {
+                Street = user.Address.Street,
+                Floor = user.Address.Floor,
+                Number = user.Address.Number,
+                City = user.Address.City
+            };
+            _context.Addresss.Add(address);
+            await _context.SaveChangesAsync();
+
+            // Create user
             var identityUser = new User
             {
                 UserName = user.UserName,
@@ -44,10 +56,12 @@ namespace backend.Services
                 PhoneNumber = user.PhoneNumber,
                 FirstName = user.FirstName,
                 LastName = user.LastName,
+                Address = user.Address,
             };
 
             var result = await _userManager.CreateAsync(identityUser, user.Password);
 
+            // Create role "User"
             if (result.Succeeded)
             {
                 var roleResult = await _userManager.AddToRoleAsync(identityUser, "User");

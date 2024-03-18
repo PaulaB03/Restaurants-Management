@@ -73,14 +73,17 @@ builder.Services.AddSwaggerGen(option =>
 
 var app = builder.Build();
 
-// Configure database
+// Initialize database
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
     try
     {
         var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+        var context = services.GetRequiredService<DataContext>();
+
         DataInitializer.SeedRoles(roleManager);
+        DataInitializer.SeedCategories(context);
     }
     catch (Exception ex)
     {

@@ -45,7 +45,7 @@ namespace backend.Services
                 Number = user.Address.Number,
                 City = user.Address.City
             };
-            _context.Addresss.Add(address);
+            _context.Addresses.Add(address);
             await _context.SaveChangesAsync();
 
             // Create user

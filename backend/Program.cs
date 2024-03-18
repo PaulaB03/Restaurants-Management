@@ -79,11 +79,13 @@ using (var scope = app.Services.CreateScope())
     var services = scope.ServiceProvider;
     try
     {
+        var userManager = services.GetRequiredService<UserManager<User>>();
         var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
         var context = services.GetRequiredService<DataContext>();
 
         DataInitializer.SeedRoles(roleManager);
         DataInitializer.SeedCategories(context);
+        DataInitializer.SeedUsers(userManager, roleManager, context);
     }
     catch (Exception ex)
     {

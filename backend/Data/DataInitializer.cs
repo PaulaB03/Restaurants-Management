@@ -55,5 +55,56 @@ namespace backend.Data
             // Save changes if any categories were added
             context.SaveChanges();
         }
+
+        public static void SeedUsers(UserManager<User> userManager, RoleManager<IdentityRole> roleManager, DataContext context)
+        {
+            // Ensure roles are seeded
+            SeedRoles(roleManager);
+
+            // Create default Address
+            var address = new Address
+            {
+                Street = "string",
+                Number = "1",
+                City = "string"
+            };
+            if (!context.Addresses.Any())
+            {
+                context.Addresses.Add(address);
+            }
+
+            var userData = new List<(string Email, string UserName, string Password, string FirstName, string LastName, string[] Roles)>
+            {
+                ("user@example.com", "user", "Password55!", "User", "", new[] { "User" }),
+                ("admin@example.com", "admin", "Password55!", "Admin", "", new[] { "User", "Admin" }),
+                ("owner@example.com", "owner", "Password55!", "Owner", "", new[] { "User", "Owner" })
+            };
+
+            foreach (var user in userData)
+            {
+                if (userManager.FindByNameAsync(user.UserName).Result == null)
+                {
+                    var newUser = new User
+                    {
+                        UserName = user.UserName,
+                        Email = user.Email,
+                        FirstName = user.FirstName,
+                        LastName = user.LastName,
+                        AddressId = 1
+                    };
+
+                    var createUserResult = userManager.CreateAsync(newUser, user.Password).Result;
+                    if (createUserResult.Succeeded)
+                    {
+                        foreach (var role in user.Roles)
+                        {
+                            var addToRoleResult = userManager.AddToRoleAsync(newUser, role).Result;
+                            // Optionally, check the result of AddToRoleAsync
+                        }
+                    }
+                    // Optionally, handle any errors from CreateUserResult
+                }
+            }
+        }
     }
 }

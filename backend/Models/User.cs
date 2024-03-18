@@ -9,7 +9,7 @@ namespace backend.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         [JsonIgnore]
-        public int AddressId { get; set; }
+        public int? AddressId { get; set; }
         [ForeignKey("AddressId")]
         public Address? Address { get; set; }
     }

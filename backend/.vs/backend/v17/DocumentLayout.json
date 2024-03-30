@@ -3,44 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\controllers\\restaurantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:controllers\\restaurantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\services\\interface\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:services\\interface\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\services\\interface\\irestaurantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:services\\interface\\irestaurantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\services\\restaurantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:services\\restaurantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\services\\interface\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:services\\interface\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\services\\interface\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:services\\interface\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\data\\datainitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:data\\datainitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,28 +35,62 @@
       "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\migrations\\datacontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:migrations\\datacontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\services\\interface\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:services\\interface\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\migrations\\20240312115426_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:migrations\\20240312115426_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\models\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:models\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\data\\datainitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:data\\datainitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\backend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:backend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea1\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea1\\backend\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|c:\\users\\ana\\desktop\\isproiect\\proiect-inginerie-software-paea\\backend\\models\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DC6660D-941D-49B5-8292-A527FF8A0261}|backend.csproj|solutionrelative:models\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,7 +100,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,206 +108,200 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Services\\Interface\\IAuthService.cs",
-              "RelativeDocumentMoniker": "Services\\Interface\\IAuthService.cs",
-              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Services\\Interface\\IAuthService.cs",
-              "RelativeToolTip": "Services\\Interface\\IAuthService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T17:51:22.428Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Services\\ProductService.cs",
-              "RelativeDocumentMoniker": "Services\\ProductService.cs",
-              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Services\\ProductService.cs",
-              "RelativeToolTip": "Services\\ProductService.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAewEEAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-16T19:58:24.859Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "Controllers\\ProductController.cs",
-              "ViewState": "AQIAAEYAAAAAAAAAAAA9wGIAAAABAAAA",
+              "Title": "RestaurantController.cs",
+              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Controllers\\RestaurantController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RestaurantController.cs",
+              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Controllers\\RestaurantController.cs",
+              "RelativeToolTip": "Controllers\\RestaurantController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAYwCsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-16T17:44:51.885Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T12:20:33.908Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "Models\\Product.cs",
-              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Models\\Product.cs",
-              "RelativeToolTip": "Models\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T13:45:18.714Z",
+              "WhenOpened": "2024-03-30T11:17:11.9Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-12T12:20:33.917Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IProductService.cs",
-              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Services\\Interface\\IProductService.cs",
-              "RelativeDocumentMoniker": "Services\\Interface\\IProductService.cs",
-              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Services\\Interface\\IProductService.cs",
-              "RelativeToolTip": "Services\\Interface\\IProductService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-16T18:01:06.317Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "Models\\Category.cs",
-              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Models\\Category.cs",
-              "RelativeToolTip": "Models\\Category.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T13:43:44.41Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAFcAAAAAAAAAAAAAAGEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T10:53:00.879Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DataContext.cs",
-              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Data\\DataContext.cs",
-              "RelativeDocumentMoniker": "Data\\DataContext.cs",
-              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Data\\DataContext.cs",
-              "RelativeToolTip": "Data\\DataContext.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAwBUAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T13:48:27.811Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DataInitializer.cs",
-              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Data\\DataInitializer.cs",
-              "RelativeDocumentMoniker": "Data\\DataInitializer.cs",
-              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Data\\DataInitializer.cs",
-              "RelativeToolTip": "Data\\DataInitializer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-16T20:07:52.816Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
               "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Controllers\\AdminController.cs",
               "RelativeToolTip": "Controllers\\AdminController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAkAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-12T12:20:33.91Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Models\\Login.cs",
-              "RelativeDocumentMoniker": "Models\\Login.cs",
-              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Models\\Login.cs",
-              "RelativeToolTip": "Models\\Login.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 5,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Controllers\\ProductController.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAlwEIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T12:20:33.905Z"
+              "WhenOpened": "2024-03-16T17:44:51.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IRestaurantService.cs",
+              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Services\\Interface\\IRestaurantService.cs",
+              "RelativeDocumentMoniker": "Services\\Interface\\IRestaurantService.cs",
+              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Services\\Interface\\IRestaurantService.cs",
+              "RelativeToolTip": "Services\\Interface\\IRestaurantService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T11:20:53.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Services\\Interface\\IProductService.cs",
+              "RelativeDocumentMoniker": "Services\\Interface\\IProductService.cs",
+              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Services\\Interface\\IProductService.cs",
+              "RelativeToolTip": "Services\\Interface\\IProductService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T18:01:06.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RestaurantService.cs",
+              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Services\\RestaurantService.cs",
+              "RelativeDocumentMoniker": "Services\\RestaurantService.cs",
+              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Services\\RestaurantService.cs",
+              "RelativeToolTip": "Services\\RestaurantService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAQwCIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T11:20:31.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Services\\ProductService.cs",
+              "RelativeToolTip": "Services\\ProductService.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwCAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T19:58:24.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Address.cs",
+              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Models\\Address.cs",
+              "RelativeDocumentMoniker": "Models\\Address.cs",
+              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Models\\Address.cs",
+              "RelativeToolTip": "Models\\Address.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T18:05:23.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T13:45:18.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T10:53:00.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-12T12:20:33.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Services\\Interface\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Services\\Interface\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Services\\Interface\\IAuthService.cs",
+              "RelativeToolTip": "Services\\Interface\\IAuthService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T17:51:22.428Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "DataContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Migrations\\DataContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "Migrations\\DataContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Migrations\\DataContextModelSnapshot.cs",
-              "RelativeToolTip": "Migrations\\DataContextModelSnapshot.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "DataInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Data\\DataInitializer.cs",
+              "RelativeDocumentMoniker": "Data\\DataInitializer.cs",
+              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Data\\DataInitializer.cs",
+              "RelativeToolTip": "Data\\DataInitializer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T10:56:06.099Z"
+              "WhenOpened": "2024-03-16T20:07:52.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Data\\DataContext.cs",
+              "RelativeDocumentMoniker": "Data\\DataContext.cs",
+              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Data\\DataContext.cs",
+              "RelativeToolTip": "Data\\DataContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T13:48:27.811Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "20240312115426_Initial.cs",
-              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Migrations\\20240312115426_Initial.cs",
-              "RelativeDocumentMoniker": "Migrations\\20240312115426_Initial.cs",
-              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Migrations\\20240312115426_Initial.cs",
-              "RelativeToolTip": "Migrations\\20240312115426_Initial.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-16T18:00:50.418Z"
+              "WhenOpened": "2024-03-12T12:20:33.908Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "Register.cs",
-              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Models\\Register.cs",
-              "RelativeDocumentMoniker": "Models\\Register.cs",
-              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Models\\Register.cs",
-              "RelativeToolTip": "Models\\Register.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T12:20:33.751Z"
+              "Title": "backend.http",
+              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\backend.http",
+              "RelativeDocumentMoniker": "backend.http",
+              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\backend.http",
+              "RelativeToolTip": "backend.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-03-29T17:37:59.48Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "Services\\AuthService.cs",
@@ -301,15 +313,74 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
               "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Models\\User.cs",
               "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-12T12:20:33.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAQAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T13:43:44.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea1\\backend\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "..\\..\\proiect-inginerie-software-paea1\\backend\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea1\\backend\\appsettings.Development.json",
+              "RelativeToolTip": "..\\..\\proiect-inginerie-software-paea1\\backend\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-29T17:30:58.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea1\\backend\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\..\\proiect-inginerie-software-paea1\\backend\\appsettings.json",
+              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea1\\backend\\appsettings.json",
+              "RelativeToolTip": "..\\..\\proiect-inginerie-software-paea1\\backend\\appsettings.json",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-29T17:30:58.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Models\\Login.cs",
+              "RelativeDocumentMoniker": "Models\\Login.cs",
+              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Models\\Login.cs",
+              "RelativeToolTip": "Models\\Login.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T12:20:33.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Register.cs",
+              "DocumentMoniker": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Models\\Register.cs",
+              "RelativeDocumentMoniker": "Models\\Register.cs",
+              "ToolTip": "C:\\Users\\Ana\\Desktop\\ISproiect\\proiect-inginerie-software-paea\\backend\\Models\\Register.cs",
+              "RelativeToolTip": "Models\\Register.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T12:20:33.751Z"
             }
           ]
         }

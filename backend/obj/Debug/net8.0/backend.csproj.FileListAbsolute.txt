@@ -292,7 +292,6 @@ D:\FMI\Anul 3\Proiect IS\backend\obj\Debug\net8.0\backend.csproj.CopyComplete
 D:\FMI\Anul 3\Proiect IS\backend\obj\Debug\net8.0\backend.genruntimeconfig.cache
 D:\FMI\Anul 3\Proiect IS\backend\obj\Debug\net8.0\ref\backend.dll
 C:\Users\Ana\Desktop\ISproiect\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\appsettings.Development.json
-C:\Users\Ana\Desktop\ISproiect\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\appsettings.json
 C:\Users\Ana\Desktop\ISproiect\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\backend.exe
 C:\Users\Ana\Desktop\ISproiect\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\backend.deps.json
 C:\Users\Ana\Desktop\ISproiect\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\backend.runtimeconfig.json
@@ -585,3 +584,4 @@ D:\FMI\IS\proiect-inginerie-software-paea\backend\obj\Debug\net8.0\refint\backen
 D:\FMI\IS\proiect-inginerie-software-paea\backend\obj\Debug\net8.0\backend.pdb
 D:\FMI\IS\proiect-inginerie-software-paea\backend\obj\Debug\net8.0\backend.genruntimeconfig.cache
 D:\FMI\IS\proiect-inginerie-software-paea\backend\obj\Debug\net8.0\ref\backend.dll
+C:\Users\Ana\Desktop\ISproiect\proiect-inginerie-software-paea\backend\bin\Debug\net8.0\appsettings.json

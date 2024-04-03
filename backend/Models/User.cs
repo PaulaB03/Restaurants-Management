@@ -12,5 +12,7 @@ namespace backend.Models
         public int? AddressId { get; set; }
         [ForeignKey("AddressId")]
         public Address? Address { get; set; }
+        [JsonIgnore]
+        public ICollection<Restaurant> Restaurants { get; set;} = new List<Restaurant>();
     }
 }

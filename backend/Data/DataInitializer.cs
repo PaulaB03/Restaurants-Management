@@ -61,18 +61,6 @@ namespace backend.Data
             // Ensure roles are seeded
             SeedRoles(roleManager);
 
-            // Create default Address
-            var address = new Address
-            {
-                Street = "string",
-                Number = "1",
-                City = "string"
-            };
-            if (!context.Addresses.Any())
-            {
-                context.Addresses.Add(address);
-            }
-
             var userData = new List<(string Email, string UserName, string Password, string FirstName, string LastName, string[] Roles)>
             {
                 ("user@example.com", "user", "Password55!", "User", "", new[] { "User" }),
@@ -90,7 +78,7 @@ namespace backend.Data
                         Email = user.Email,
                         FirstName = user.FirstName,
                         LastName = user.LastName,
-                        AddressId = 1
+                        AddressId = null
                     };
 
                     var createUserResult = userManager.CreateAsync(newUser, user.Password).Result;
@@ -99,11 +87,58 @@ namespace backend.Data
                         foreach (var role in user.Roles)
                         {
                             var addToRoleResult = userManager.AddToRoleAsync(newUser, role).Result;
-                            // Optionally, check the result of AddToRoleAsync
                         }
                     }
-                    // Optionally, handle any errors from CreateUserResult
                 }
+            }
+
+            SeedRestaurantWithProducts(context);
+        }
+
+        public static void SeedRestaurantWithProducts(DataContext context)
+        {
+            // Ensure that categories are seeded first
+            SeedCategories(context);
+
+            // Check if the restaurant already exists 
+            if (!context.Restaurants.Any(r => r.Name == "Yummy"))
+            {
+                var categoryId = context.Categories.First().Id; 
+                var ownerId = context.Users.FirstOrDefault(u => u.Email == "owner@example.com")?.Id;
+                if (ownerId == null)
+                {
+                    Console.WriteLine("Owner user not found. Ensure that the 'owner' user is seeded.");
+                    return;
+                }
+
+                var address = new Address { City = "Bucuresti", Number = "34", Street = "Eroilor"};
+                context.Addresses.Add(address);
+                context.SaveChanges();
+
+                var restaurant = new Restaurant
+                {
+                    Name = "Yummy",
+                    Description = "A sample restaurant description",
+                    OwnerId = ownerId, 
+                    Address = address, 
+                    Products = new List<Product>
+                    {
+                        new Product { Name = "Snitel", Price = 10.00f, CategoryId = categoryId },
+                        new Product { Name = "Salata", Price = 15.00f, CategoryId = categoryId },
+                        new Product { Name = "Paste", Price = 20.00f, CategoryId = categoryId }
+                    }
+                };
+
+                context.Restaurants.Add(restaurant);
+                context.SaveChanges();
+
+                // Linking products to the restaurant
+                foreach (var product in restaurant.Products)
+                {
+                    product.RestaurantId = restaurant.Id;
+                }
+
+                context.SaveChanges();
             }
         }
     }

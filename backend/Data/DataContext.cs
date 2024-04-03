@@ -30,20 +30,28 @@ namespace backend.Data
                 .HasOne(u => u.Address)
                 .WithOne()
                 .HasForeignKey<User>(u => u.AddressId)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Restrict); 
 
             // Restaurant-Address -- one-to-one
             modelBuilder.Entity<Restaurant>()
                 .HasOne(r => r.Address)
                 .WithOne()
                 .HasForeignKey<Restaurant>(r => r.AddressId)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Restrict);
 
             // Restaurant-Product -- one-to-many
             modelBuilder.Entity<Restaurant>()
                 .HasMany(r => r.Products)
                 .WithOne(p => p.Restaurant)
-                .HasForeignKey(p => p.RestaurantId);
+                .HasForeignKey(p => p.RestaurantId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            // User-Restaurant -- one-to-many
+            modelBuilder.Entity<User>()
+                .HasMany(u => u.Restaurants)
+                .WithOne(r => r.Owner)
+                .HasForeignKey(r => r.OwnerId)
+                .OnDelete(DeleteBehavior.Restrict);
 
         }
     }

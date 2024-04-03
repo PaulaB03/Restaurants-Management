@@ -16,7 +16,7 @@ namespace backend.Controllers
             _restaurantService = restaurantService;
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Owner")]
         [HttpPost]
         public async Task<IActionResult> AddRestaurant(Restaurant restaurant)
         {

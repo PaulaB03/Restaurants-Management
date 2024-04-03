@@ -19,7 +19,7 @@ namespace backend.Controllers
             _productService = productService;
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Owner")]
         [HttpPost]
         public async Task<IActionResult> AddProduct(Product product)
         {
@@ -42,7 +42,7 @@ namespace backend.Controllers
             return Ok(product);
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Owner")]
         [HttpPut("{productId}/{price}")]
         public async Task<IActionResult> UpdatePrice(int productId, float price)
         {
@@ -54,7 +54,7 @@ namespace backend.Controllers
             return BadRequest("Failed to update price");
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Owner")]
         [HttpDelete("{productId}")]
         public async Task<IActionResult> DeleteProduct(int productId)
         {

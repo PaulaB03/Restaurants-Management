@@ -71,6 +71,16 @@ builder.Services.AddSwaggerGen(option =>
     option.OperationFilter<SecurityRequirementsOperationFilter>();
 });
 
+// Enable CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngularApp",
+        builder => builder
+            .WithOrigins("http://localhost:4200")
+            .AllowAnyHeader()
+            .AllowAnyMethod());
+});
+
 
 var app = builder.Build();
 
@@ -101,6 +111,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+// Enable CORS
+if (app.Environment.IsDevelopment())
+{
+    app.UseCors("AllowAngularApp");
+}
+
 
 app.UseHttpsRedirection();
 

@@ -38,5 +38,30 @@ namespace backend.Controllers
 
             return BadRequest();
         }
+
+        [HttpGet("CheckEmail")]
+        public async Task<IActionResult> CheckEmailUnique(string email)
+        {
+            bool isUnique = await _authService.IsEmailUnique(email);
+            return Ok(isUnique);
+        }
+
+        [HttpGet("CheckUsername")]
+        public async Task<IActionResult> CheckUsernameUnique(string username)
+        {
+            bool isUnique = await _authService.IsUsernameUnique(username);
+            return Ok(isUnique);
+        }
+
+        [HttpGet("GetUser")]
+        public async Task<IActionResult> GetUserByEmail(string email)
+        {
+            var user = await _authService.GetUserByEmail(email);
+            if (user != null)
+            {
+                return Ok(user);
+            }
+            return NotFound("User not found.");
+        }
     }
 }

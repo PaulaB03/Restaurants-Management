@@ -1,6 +1,8 @@
 <nav>
     <a routerLink="/restaurants">Restaurants</a>
-    <a *ngIf="isLoggedIn" routerLink="/profile">Profile</a>
-    <a *ngIf="!isLoggedIn" (click)="login()" routerLink="/login">Log In</a>
-    <a *ngIf="isLoggedIn" (click)="logout()">Log Out</a>
+    <a *ngIf="authService.isLoggedIn()" routerLink="/profile">Profile</a>
+    <a *ngIf="authService.hasRole('Admin')" routerLink="/admin">Admin</a>
+    <a *ngIf="authService.hasRole('Owner')" routerLink="/owner">Owner</a>
+    <a *ngIf="!authService.isLoggedIn()" routerLink="/login">Log In</a>
+    <a *ngIf="authService.isLoggedIn()" (click)="authService.logout()">Log Out</a>
 </nav>

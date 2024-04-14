@@ -1,1 +1,110 @@
 <p>register works!</p>
+
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+    <!-- Step 1: Account Information -->
+    <div *ngIf="currentStep === 1" formGroupName="account">
+      <div>
+        <label>Username:</label>
+        <input formControlName="userName" placeholder="Username">
+        <div *ngIf="registerForm.get('account.userName')?.touched && registerForm.get('account.userName')?.errors?.['required']">
+          Username is required.
+        </div>
+        <!-- Add other error messages for uniqueness etc. -->
+      </div>
+  
+      <div>
+        <label>Email:</label>
+        <input type="email" formControlName="email" placeholder="Email">
+        <div *ngIf="registerForm.get('account.email')?.touched && registerForm.get('account.email')?.errors?.['required']">
+          Email is required.
+        </div>
+        <div *ngIf="registerForm.get('account.email')?.errors?.['email']">
+          Please enter a valid email.
+        </div>
+        <!-- Add uniqueness validation feedback -->
+      </div>
+  
+      <div>
+        <label>Password:</label>
+        <input type="password" formControlName="password" placeholder="Password">
+        <div *ngIf="registerForm.get('account.password')?.touched">
+          <div *ngIf="registerForm.get('account.password')?.errors?.['required']">
+            Password is required.
+          </div>
+          <div *ngIf="registerForm.get('account.password')?.errors?.['passwordStrength']">
+            Password must be at least 10 characters and include upper, lower, numeric, and special characters.
+          </div>
+        </div>
+      </div>
+  
+      <button type="button" (click)="goToStep(2)" [disabled]="!(registerForm.get('account')?.valid ?? false)">Next</button>
+      <p>Already have an account? <a routerLink="/login">Login</a></p>
+    </div>
+  
+    <!-- Step 2: Personal Information -->
+    <div *ngIf="currentStep === 2" formGroupName="personal">
+      <div>
+        <label>First Name:</label>
+        <input formControlName="firstName" placeholder="First Name">
+        <div *ngIf="registerForm.get('personal.firstName')?.errors?.['required']">
+          First name is required.
+        </div>
+      </div>
+  
+      <div>
+        <label>Last Name:</label>
+        <input formControlName="lastName" placeholder="Last Name">
+        <div *ngIf="registerForm.get('personal.lastName')?.errors?.['required']">
+          Last name is required.
+        </div>
+      </div>
+  
+      <div>
+        <label>Phone Number:</label>
+        <input formControlName="phoneNumber" placeholder="Phone Number">
+        <div *ngIf="registerForm.get('personal.phoneNumber')?.errors?.['required']">
+          Phone number is required.
+        </div>
+      </div>
+  
+      <button type="button" (click)="goToStep(1)">Back</button>
+      <button type="button" (click)="goToStep(3)" [disabled]="!(registerForm.get('personal')?.valid ?? false)">Next</button>
+    </div>
+  
+    <!-- Step 3: Address Information -->
+    <div *ngIf="currentStep === 3" formGroupName="address">
+      <div>
+        <label>Street:</label>
+        <input formControlName="street" placeholder="Street">
+        <div *ngIf="registerForm.get('address.street')?.errors?.['required']">
+          Street is required.
+        </div>
+      </div>
+  
+      <div>
+        <label>Floor:</label>
+        <input formControlName="floor" placeholder="Floor (Optional)">
+      </div>
+  
+      <div>
+        <label>Number:</label>
+        <input formControlName="number" placeholder="Number">
+        <div *ngIf="registerForm.get('address.number')?.errors?.['required']">
+          Number is required.
+        </div>
+      </div>
+  
+      <div>
+        <label>City:</label>
+        <input formControlName="city" placeholder="City">
+        <div *ngIf="registerForm.get('address.city')?.errors?.['required']">
+          City is required.
+        </div>
+      </div>
+  
+      <button type="button" (click)="goToStep(2)">Back</button>
+      <button type="submit" [disabled]="!(registerForm.get('address')?.valid ?? false)">Register</button>
+    </div>
+</form>
+  

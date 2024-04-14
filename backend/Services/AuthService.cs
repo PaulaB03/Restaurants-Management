@@ -111,6 +111,24 @@ namespace backend.Services
             return result.Succeeded;
         }
 
+        public async Task<bool> IsEmailUnique(string email)
+        {
+            var user = await _userManager.FindByEmailAsync(email);
+            return user == null;
+        }
+
+        public async Task<bool> IsUsernameUnique(string username)
+        {
+            var user = await _userManager.FindByNameAsync(username);
+            return user == null;
+        }
+
+        public async Task<User> GetUserByEmail(string email)
+        {
+            var user = await _userManager.FindByEmailAsync(email);
+            user.PasswordHash = null;
+            return user;
+        }
 
         public async Task<string> GenerateTokenString(Login user)
         {

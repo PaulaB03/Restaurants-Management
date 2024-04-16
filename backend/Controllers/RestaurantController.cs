@@ -28,7 +28,7 @@ namespace backend.Controllers
             return BadRequest("Failed to add restaurant!");
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Owner")]
         [HttpDelete("{restaurantId}")]
         public async Task<IActionResult> DeleteRestaurant(int restaurantId)
         {
@@ -38,6 +38,31 @@ namespace backend.Controllers
                 return Ok("Restaurant deleted");
             }
             return BadRequest("Failed to delete restaurant!");
+        }
+
+        [HttpGet("{restaurantId}")]
+        public async Task<IActionResult> GetRestaurantById(int restaurantId)
+        {
+            var restaurant = await _restaurantService.GetRestaurantById(restaurantId);
+            if (restaurant == null)
+            {
+                return NotFound($"Restaurant with id {restaurantId} not found!");
+            }
+            else
+            {
+                return Ok(restaurant);
+            }
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetRestaurants()
+        {
+            var restaurants = await _restaurantService.GetRestaurants();
+            if (restaurants == null || !restaurants.Any())
+            {
+                return NotFound("No restaurants found.");
+            }
+            return Ok(restaurants);
         }
     }
 }

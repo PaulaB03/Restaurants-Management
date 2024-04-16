@@ -18,6 +18,7 @@ export class ProfileComponent {
       next: user => {
         this.userDetails = user;
         console.log(this.userDetails);
+        console.log(this.userDetails.id);
       },
       error: error => {
         console.error('Failed to fetch user details', error);

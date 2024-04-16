@@ -1,1 +1,54 @@
-<p>admin works!</p>
+<div class="admin-panel">
+    <h2>Admin Panel - Manage User Roles</h2>
+    
+    <form [formGroup]="roleForm" (ngSubmit)="assignRole()">
+        <div>
+            <label>Email:</label>
+            <input type="email" formControlName="email" placeholder="Email">
+            <div *ngIf="roleForm.get('email')?.touched && roleForm.get('email')?.errors?.['required']">
+              Email is required.
+            </div>
+            <div *ngIf="roleForm.get('email')?.errors?.['email']">
+              Please enter a valid email.
+            </div>
+        </div>
+      <div class="form-group">
+        <label for="role">Assign Role:</label>
+        <select id="role" formControlName="role" required>
+          <option value="">Select a Role</option>
+          <option value="Admin">Admin</option>
+          <option value="Owner">Owner</option>
+        </select>
+        <div *ngIf="roleForm.get('role')?.errors && (roleForm.get('role')?.touched)">
+          <p class="error" *ngIf="roleForm.get('role')?.errors?.['required']">Role is required.</p>
+        </div>
+      </div>
+      <button type="submit" [disabled]="!roleForm.valid">Assign Role</button>
+    </form>
+
+    <form [formGroup]="removeForm" (ngSubmit)="removeRole()">
+        <div>
+            <label>Email:</label>
+            <input type="email" formControlName="email" placeholder="Email">
+            <div *ngIf="removeForm.get('email')?.touched && removeForm.get('email')?.errors?.['required']">
+              Email is required.
+            </div>
+            <div *ngIf="removeForm.get('email')?.errors?.['email']">
+              Please enter a valid email.
+            </div>
+        </div>
+      <div class="form-group">
+        <label for="role">Assign Role:</label>
+        <select id="role" formControlName="role" required>
+          <option value="">Select a Role</option>
+          <option value="Admin">Admin</option>
+          <option value="Owner">Owner</option>
+        </select>
+        <div *ngIf="removeForm.get('role')?.errors && (removeForm.get('role')?.touched)">
+          <p class="error" *ngIf="removeForm.get('role')?.errors?.['required']">Role is required.</p>
+        </div>
+      </div>
+      <button type="submit" [disabled]="!removeForm.valid">Assign Role</button>
+    </form>
+  
+  </div>

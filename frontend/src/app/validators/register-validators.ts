@@ -23,19 +23,28 @@ export function passwordValidator(): ValidatorFn {
 }
 
 export function uniqueEmailValidator(authService: AuthService): AsyncValidatorFn {
-    return (control: AbstractControl) => {
-      return authService.checkEmailExists(control.value).pipe(
-        map(isUnique => isUnique ? null : { uniqueEmail: true }),
-        catchError(() => of(null))
-      );
-    };
-  }
+  return (control: AbstractControl) => {
+    return authService.checkEmailExists(control.value).pipe(
+      map(isUnique => isUnique ? null : { uniqueEmail: true }),
+      catchError(() => of(null))
+    );
+  };
+}
+
+export function existingEmailValidator(authService: AuthService): AsyncValidatorFn {
+  return (control: AbstractControl) => {
+    return authService.checkEmailExists(control.value).pipe(
+      map(isUnique => isUnique ? { uniqueEmail: true } : null),
+      catchError(() => of(null))
+    );
+  };
+}
   
-  export function uniqueUsernameValidator(authService: AuthService): AsyncValidatorFn {
-    return (control: AbstractControl) => {
-      return authService.checkUsernameExists(control.value).pipe(
-        map(isUnique => isUnique ? null : { uniqueUsername: true }),
-        catchError(() => of(null))
-      );
-    };
-  }
+export function uniqueUsernameValidator(authService: AuthService): AsyncValidatorFn {
+  return (control: AbstractControl) => {
+    return authService.checkUsernameExists(control.value).pipe(
+      map(isUnique => isUnique ? null : { uniqueUsername: true }),
+      catchError(() => of(null))
+    );
+  };
+}

@@ -1,12 +1,9 @@
-<p>register works!</p>
-
-<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
-
+<form class="form" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+  <h1>Register</h1>
     <!-- Step 1: Account Information -->
     <div *ngIf="currentStep === 1" formGroupName="account">
       <div>
-        <label>Username:</label>
-        <input formControlName="userName" placeholder="Username">
+        <input formControlName="userName" placeholder="Type your username">
         <div *ngIf="registerForm.get('account.userName')?.touched && registerForm.get('account.userName')?.errors?.['required']">
           Username is required.
         </div>
@@ -14,8 +11,7 @@
       </div>
   
       <div>
-        <label>Email:</label>
-        <input type="email" formControlName="email" placeholder="Email">
+        <input type="email" formControlName="email" placeholder="Type your email">
         <div *ngIf="registerForm.get('account.email')?.touched && registerForm.get('account.email')?.errors?.['required']">
           Email is required.
         </div>
@@ -26,8 +22,7 @@
       </div>
   
       <div>
-        <label>Password:</label>
-        <input type="password" formControlName="password" placeholder="Password">
+        <input type="password" formControlName="password" placeholder="Type your password">
         <div *ngIf="registerForm.get('account.password')?.touched">
           <div *ngIf="registerForm.get('account.password')?.errors?.['required']">
             Password is required.
@@ -39,7 +34,10 @@
       </div>
   
       <button type="button" (click)="goToStep(2)" [disabled]="!(registerForm.get('account')?.valid ?? false)">Next</button>
-      <p>Already have an account? <a routerLink="/login">Login</a></p>
+      <div class="login">
+        <h3>Already have an account?</h3>
+        <a routerLink="/login">Login</a>
+      </div>
     </div>
   
     <!-- Step 2: Personal Information -->

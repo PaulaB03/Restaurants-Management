@@ -1,0 +1,34 @@
+.container {
+    /* background-color: #7bc17b; */
+    background-color: #17252a;
+    height: 60px;
+}
+
+.restaurants {
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.log_in {
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.restaurants:hover {
+    font-size: 22px;
+}
+
+.log_in:hover {
+    font-size: 22px;
+}

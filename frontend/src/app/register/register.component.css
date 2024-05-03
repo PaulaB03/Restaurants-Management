@@ -1,0 +1,87 @@
+.form {
+        width: 450px;
+        height: 550px;
+        border-radius: 10px;
+        background-color: #2b7a78;
+        margin: auto;
+        margin-top: 60px;
+        text-align: center;
+        position: relative;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    display: block;
+    margin-top: 60px;
+    margin-left: 140px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 35%;
+    height: 50px;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: #3aafa9;
+    color: white;
+    border: none;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    background-color: #4bb4af;
+}
+
+input {
+    display: block;
+    margin-left: 50px;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #3d8c89;
+    border-radius: 10px;
+    width: 50%;
+    box-sizing: border-box;
+    font-size: 16.5px;
+    color: white;
+    text-align: center;
+    transform: translateX(30%);
+}
+
+h1 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+input::placeholder {
+    color:#1b6461;
+    font-size: 18px;
+}
+
+
+.login {
+    text-align: center;
+    margin-top: 30px;
+}
+
+a {
+    color: white;
+    text-decoration:none;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+}
+
+h3 {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: white;
+}

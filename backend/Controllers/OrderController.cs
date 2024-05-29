@@ -3,77 +3,67 @@ using backend.Services;
 using backend.Services.Interface;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace backend.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class OrderController : ControllerBase
     {
         private readonly IOrderService _orderService;
+
         public OrderController(IOrderService orderService)
         {
             _orderService = orderService;
         }
 
-        [Authorize(Roles = "User")]
-        [HttpPost("AddOrder")]
+        [HttpGet]
+        [Authorize]
+        [Route("GetOrders/{userId}")]
+        public async Task<IActionResult> GetOrders(string userId)
+        {
+            var orders = await _orderService.GetOrdersAsync(userId);
+            return Ok(orders);
+        }
+
+        [HttpGet]
+        [Authorize]
+        [Route("GetOrderById/{id}/{userId}")]
+        public async Task<IActionResult> GetOrderById(int id, string userId)
+        {
+            var order = await _orderService.GetOrderByIdAsync(id, userId);
+            if (order == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(order);
+        }
+
+        [HttpPost]
+        [Authorize]
+        [Route("AddOrder")]
         public async Task<IActionResult> AddOrder(Order order)
         {
-            var result = await _orderService.AddOrder(order);
-            if (result)
-            {
-                return Ok(order);
-            }
-            return BadRequest("Failed to add order!");
+            order.OrderDate = DateTime.UtcNow;
+            var createdOrder = await _orderService.AddOrderAsync(order);
+            return Ok(createdOrder);
         }
 
-        [Authorize(Roles = "User")]
-        [HttpPost("AddOrderItem")]
-        public async Task<IActionResult> AddOrderItem(OrderItem orderItem)
+        [HttpDelete]
+        [Authorize]
+        [Route("DeleteOrder/{id}")]
+        public async Task<IActionResult> DeleteOrder(int id)
         {
-            var result = await _orderService.AddOrderItem(orderItem);
-            if (result)
+            var result = await _orderService.DeleteOrderAsync(id);
+            if (!result)
             {
-                return Ok(orderItem);
+                return NotFound();
             }
-            return BadRequest("Failed to add order item!");
-        }
 
-        [Authorize(Roles = "User")]
-        [HttpDelete("{orderItemId}")]
-        public async Task<IActionResult> DeleteOrderItem(int orderItemId)
-        {
-            var result = await _orderService.DeleteOrderItem(orderItemId);
-            if (result)
-            {
-                return Ok("Order item deleted");
-            }
-            return BadRequest("Failed to delete order item!");
-        }
-
-        [Authorize(Roles = "User")]
-        [HttpPut("IncreaseOrderItemQuantity{orderItemId}")]
-        public async Task<IActionResult> IncreaseOrderItemQuantity(int orderItemId)
-        {
-            var result = await _orderService.IncreaseOrderItemQuantity(orderItemId);
-            if (result)
-            {
-                return Ok("Quantity increased");
-            }
-            return BadRequest("Failed to increase quantity");
-        }
-
-        [Authorize(Roles = "User")]
-        [HttpPut("DecreaseOrderItemQuantity{orderItemId}")]
-        public async Task<IActionResult> DecreaseOrderItemQuantity(int orderItemId)
-        {
-            var result = await _orderService.IncreaseOrderItemQuantity(orderItemId);
-            if (result)
-            {
-                return Ok("Quantity decreased");
-            }
-            return BadRequest("Failed to decrease quantity");
+            return Ok();
         }
     }
+
 }

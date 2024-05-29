@@ -11,5 +11,7 @@ namespace backend.Services.Interface
         Task<bool> AddCategory(Category category);
         Task<Category> GetCategoryById(int categoryId);
         Task<List<Category>> GetCategories();
+        Task<List<Product>> GetProductsByRestaurant(int restaurantId);
+        Task<List<Product>> GetProductsByRestaurantAndCategory(int restaurantId, int categoryId);
     }
 }

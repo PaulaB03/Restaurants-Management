@@ -95,5 +95,27 @@ namespace backend.Controllers
             var categoriesList = await _productService.GetCategories();
             return Ok(categoriesList);
         }
+
+        [HttpGet("restaurant/{restaurantId}")]
+        public async Task<ActionResult<IEnumerable<Product>>> GetProductsByRestaurant(int restaurantId)
+        {
+            var products = await _productService.GetProductsByRestaurant(restaurantId);
+            if (products == null || !products.Any())
+            {
+                return NotFound();
+            }
+            return Ok(products);
+        }
+
+        [HttpGet("restaurant/{restaurantId}/category/{categoryId}")]
+        public async Task<ActionResult<IEnumerable<Product>>> GetProductsByRestaurantAndCategory(int restaurantId, int categoryId)
+        {
+            var products = await _productService.GetProductsByRestaurantAndCategory(restaurantId, categoryId);
+            if (products == null || !products.Any())
+            {
+                return NotFound();
+            }
+            return Ok(products);
+        }
     }
 }

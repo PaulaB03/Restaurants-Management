@@ -10,11 +10,14 @@ namespace backend.Models
         public string UserId { get; set; }
         public int RestaurantId { get; set; }
         public DateTime OrderDate { get; set; }
-        public List<OrderItem> Items { get; set; } = new List<OrderItem>();
-        public float FinalPrice { get; set; }
-        [JsonIgnore]
-        public User User { get; set; }
-        [JsonIgnore]
-        public Restaurant Restaurant { get; set; }
+        public List<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
+        public float TotalPrice { get; set; }
+    }
+
+    public class OrderItem
+    {
+        public int Id { get; set; }
+        public int ProductId { get; set; }
+        public int Quantity { get; set; }
     }
 }

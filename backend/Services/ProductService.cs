@@ -65,5 +65,15 @@ namespace backend.Services
         {
             return await _context.Categories.ToListAsync();
         }
+
+        public async Task<List<Product>> GetProductsByRestaurant(int restaurantId)
+        {
+            return await _context.Products.Where(p => p.RestaurantId == restaurantId).ToListAsync();
+        }
+
+        public async Task<List<Product>> GetProductsByRestaurantAndCategory(int restaurantId, int categoryId)
+        {
+            return await _context.Products.Where(p => p.RestaurantId == restaurantId && p.CategoryId == categoryId).ToListAsync();
+        }
     }
 }

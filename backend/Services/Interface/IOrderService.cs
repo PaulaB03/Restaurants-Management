@@ -4,10 +4,9 @@ namespace backend.Services.Interface
 {
     public interface IOrderService
     {
-        Task<bool> AddOrder(Order order);
-        Task<bool> AddOrderItem(OrderItem orderItem);
-        Task<bool> DeleteOrderItem(int orderItemId);
-        Task<bool> IncreaseOrderItemQuantity(int orderItemId);
-        Task<bool> DecreaseOrderItemQuantity(int orderItemId);
+        Task<IEnumerable<Order>> GetOrdersAsync(string userId);
+        Task<Order> GetOrderByIdAsync(int orderId, string userId);
+        Task<Order> AddOrderAsync(Order order);
+        Task<bool> DeleteOrderAsync(int orderId);
     }
 }

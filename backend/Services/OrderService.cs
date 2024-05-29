@@ -14,59 +14,57 @@ namespace backend.Services
             _context = context;
         }
 
-        public async Task<bool> AddOrder(Order order)
+        public async Task<IEnumerable<Order>> GetOrdersAsync(string userId)
         {
+            return await _context.Orders
+                .Where(o => o.UserId == userId)
+                .Include(o => o.OrderItems)
+                .ToListAsync();
+        }
+
+        public async Task<Order> GetOrderByIdAsync(int orderId, string userId)
+        {
+            return await _context.Orders
+                .Include(o => o.OrderItems)
+                .FirstOrDefaultAsync(o => o.OrderId == orderId && o.UserId == userId);
+        }
+
+        public async Task<Order> AddOrderAsync(Order order)
+        {
+            order.TotalPrice = await CalculateTotalPriceAsync(order.OrderItems);
             _context.Orders.Add(order);
-            return await _context.SaveChangesAsync() > 0;
+            await _context.SaveChangesAsync();
+            return order;
         }
 
-        public async Task<bool> AddOrderItem(OrderItem orderItem)
+        public async Task<bool> DeleteOrderAsync(int orderId)
         {
-            _context.OrderItems.Add(orderItem);
-            return await _context.SaveChangesAsync() > 0;
-        }
+            var order = await _context.Orders
+                .Include(o => o.OrderItems)
+                .FirstOrDefaultAsync(o => o.OrderId == orderId);
 
-        public async Task<bool> DeleteOrderItem(int orderItemId)
-        {
-            var orderItem = await _context.OrderItems.FindAsync(orderItemId);
-            if (orderItem == null)
+            if (order == null)
             {
                 return false;
             }
 
-            _context.OrderItems.Remove(orderItem);
-            return await _context.SaveChangesAsync() > 0;
+            _context.Orders.Remove(order);
+            await _context.SaveChangesAsync();
+            return true;
         }
 
-        public async Task<bool> IncreaseOrderItemQuantity(int orderItemId)
+        private async Task<float> CalculateTotalPriceAsync(List<OrderItem> orderItems)
         {
-            var existingOrderItem = await _context.OrderItems.FindAsync(orderItemId);
-            if (existingOrderItem == null)
+            float totalPrice = 0;
+            foreach (var item in orderItems)
             {
-                return false;
+                var product = await _context.Products.FindAsync(item.ProductId);
+                if (product != null)
+                {
+                    totalPrice += product.Price * item.Quantity;
+                }
             }
-
-            existingOrderItem.Quantity += 1;
-            _context.OrderItems.Update(existingOrderItem);
-            return await _context.SaveChangesAsync() > 0;
-        }
-
-        public async Task<bool> DecreaseOrderItemQuantity(int orderItemId)
-        {
-            var existingOrderItem = await _context.OrderItems.FindAsync(orderItemId);
-            if (existingOrderItem == null)
-            {
-                return false;
-            }
-
-            existingOrderItem.Quantity -= 1;
-            if(existingOrderItem.Quantity == 0)
-            {
-                await DeleteOrderItem(orderItemId);
-            }
-
-            _context.OrderItems.Update(existingOrderItem);
-            return await _context.SaveChangesAsync() > 0;
+            return totalPrice;
         }
     }
 }

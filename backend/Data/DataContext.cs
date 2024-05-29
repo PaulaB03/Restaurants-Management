@@ -15,7 +15,6 @@ namespace backend.Data
         public DbSet<Category> Categories { get; set; }
         public DbSet<Address> Addresses { get; set; }
         public DbSet<Order> Orders { get; set; }
-        public DbSet<OrderItem> OrderItems { get; set; }
 
 
 
@@ -57,26 +56,19 @@ namespace backend.Data
                 .HasForeignKey(r => r.OwnerId)
                 .OnDelete(DeleteBehavior.Restrict);
 
-            modelBuilder.Entity<Order>()
-                .HasMany(o => o.Items)
-                .WithOne()
-                .OnDelete(DeleteBehavior.Cascade);
+            modelBuilder.Entity<Order>(order =>
+            {
+                order.OwnsMany(o => o.OrderItems, oi =>
+                {
+                    oi.WithOwner().HasForeignKey("OrderId");
+                    oi.Property<int>("Id");
+                    oi.HasKey("Id");
+                    oi.ToTable("OrderItems");
+                });
 
-            modelBuilder.Entity<Order>()
-                .HasOne(o => o.User)
-                .WithMany()
-                .HasForeignKey(o => o.UserId);
+                order.Navigation(o => o.OrderItems).UsePropertyAccessMode(PropertyAccessMode.Property);
+            });
 
-            modelBuilder.Entity<Order>()
-                .HasOne(o => o.Restaurant)
-                .WithMany()
-                .HasForeignKey(o => o.RestaurantId);
-
-            modelBuilder.Entity<OrderItem>()
-                .HasOne(oi => oi.Product)
-                .WithMany()
-                .HasForeignKey(oi => oi.ProductId)
-                .OnDelete(DeleteBehavior.Restrict); 
         }
     }
 }

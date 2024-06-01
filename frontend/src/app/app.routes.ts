@@ -9,13 +9,16 @@ import { AdminComponent } from './admin/admin.component';
 import { OwnerComponent } from './owner/owner.component';
 import { adminGuard } from './guards/admin.guard';
 import { ownerGuard } from './guards/owner.guard';
+import { RestaurantComponent } from './restaurant/restaurant.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/restaurants', pathMatch: 'full' },
+    { path: 'restaurants/:id', component: RestaurantComponent },
     { path: 'restaurants', component: RestaurantsComponent },
     { path: 'profile', component: ProfileComponent, canActivate: [noAuthGuard] },
     { path: 'login', component: LoginComponent, canActivate: [authGuard] },
     { path: 'register', component: RegisterComponent, canActivate: [authGuard] },
     { path: 'admin', component: AdminComponent, canActivate: [adminGuard] },
-    { path: 'owner', component: OwnerComponent, canActivate: [ownerGuard] }
+    { path: 'owner', component: OwnerComponent, canActivate: [ownerGuard] },
+    { path: '**', redirectTo: '/restaurants' }
 ];

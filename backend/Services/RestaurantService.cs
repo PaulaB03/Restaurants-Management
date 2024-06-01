@@ -40,7 +40,7 @@ namespace backend.Services
 
         public async Task<List<Restaurant>> GetRestaurants()
         {
-            return await _context.Restaurants.ToListAsync();
+            return await _context.Restaurants.Include(r => r.Address).ToListAsync();
         }
     }
 }

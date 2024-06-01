@@ -1,8 +1,8 @@
 <nav class="container">
-    <a routerLink="/restaurants" class="restaurants">RESTAURANTS</a>
+    <a routerLink="/restaurants">RESTAURANTS</a>
     <a *ngIf="authService.isLoggedIn()" routerLink="/profile">Profile</a>
     <a *ngIf="authService.hasRole('Admin')" routerLink="/admin">Admin</a>
     <a *ngIf="authService.hasRole('Owner')" routerLink="/owner">Owner</a>
     <a *ngIf="!authService.isLoggedIn()" routerLink="/login" class="log_in">LOG IN</a>
-    <a *ngIf="authService.isLoggedIn()" (click)="authService.logout()">Log Out</a>
+    <a *ngIf="authService.isLoggedIn()" (click)="authService.logout()" class="log_in">Log Out</a>
 </nav>

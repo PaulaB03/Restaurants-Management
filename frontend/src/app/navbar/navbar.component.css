@@ -4,8 +4,9 @@
     height: 60px;
 }
 
-.restaurants {
+a {
     float: left;
+    text-transform: uppercase;
     margin-left: 20px;
     margin-top: 20px;
     text-decoration: none;
@@ -18,17 +19,8 @@
     float: right;
     margin-right: 20px;
     margin-top: 20px;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
 }
 
-.restaurants:hover {
-    font-size: 22px;
-}
-
-.log_in:hover {
-    font-size: 22px;
+a:hover {
+    font-size: 21px;
 }

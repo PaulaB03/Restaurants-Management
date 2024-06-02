@@ -22,7 +22,7 @@ export class LoginComponent {
       next: token => {
         this.authService.saveToken(token); 
         this.authService.decodeToken();
-        this.router.navigate(['profile']);
+        this.router.navigate(['restaurants']);
       },
       error: err => console.error('Login Error: ', err)
     });

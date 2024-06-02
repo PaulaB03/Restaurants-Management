@@ -1,7 +1,9 @@
+<h1>Admin Panel - Manage User Roles</h1>
+
 <div class="admin-panel">
-    <h2>Admin Panel - Manage User Roles</h2>
-    
-    <form [formGroup]="roleForm" (ngSubmit)="assignRole()">
+    <div>
+      <h2>Assign User Role</h2>
+      <form [formGroup]="roleForm" (ngSubmit)="assignRole()">
         <div>
             <label>Email:</label>
             <input type="email" formControlName="email" placeholder="Email">
@@ -25,8 +27,11 @@
       </div>
       <button type="submit" [disabled]="!roleForm.valid">Assign Role</button>
     </form>
+    </div>
 
-    <form [formGroup]="removeForm" (ngSubmit)="removeRole()">
+    <div>
+      <h2>Remove User Role</h2>
+      <form [formGroup]="removeForm" (ngSubmit)="removeRole()">
         <div>
             <label>Email:</label>
             <input type="email" formControlName="email" placeholder="Email">
@@ -50,5 +55,5 @@
       </div>
       <button type="submit" [disabled]="!removeForm.valid">Assign Role</button>
     </form>
-  
+    </div>
   </div>

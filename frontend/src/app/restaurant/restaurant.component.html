@@ -1,1 +1,69 @@
-<p>restaurant works!</p>
+<div *ngIf="restaurant">
+    <h1>{{ restaurant.name }}</h1>
+
+    <div *ngIf="isOwner">
+        <h2>Add New Product</h2>
+        <form (ngSubmit)="addProduct()">
+          <label for="name">Name:</label>
+          <input id="name" [(ngModel)]="newProduct.name" name="name" required>
+          
+          <label for="price">Price:</label>
+          <input id="price" type="number" [(ngModel)]="newProduct.price" name="price" required>
+          
+          <label for="categoryId">Category:</label>
+          <select id="categoryId" [(ngModel)]="newProduct.categoryId" name="categoryId" required>
+            <option *ngFor="let category of allCategories" [value]="category.id">{{ category.name }}</option>
+          </select>
+          
+          <button type="submit">Add Product</button>
+        </form>
+    </div>
+
+    <div *ngFor="let category of categories">
+        <div *ngIf="category.products.length > 0">
+          <h2>{{ category.name }}</h2>
+          <div *ngFor="let product of category.products">
+            <h3>{{ product.name }}</h3>
+            <p>Price: {{ product.price | currency }}</p>
+            <button *ngIf="userId != null && !isOwner" (click)="addToCart(product)">Add to Cart</button>
+            <div *ngIf="isOwner">
+              <button (click)="startEditProduct(product)">Update Product</button>
+              <button (click)="deleteProduct(product.id!)">Delete Product</button>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="!restaurant">
+    <p>Loading restaurant details...</p>
+</div>
+
+<div *ngIf="isOwner && editProduct">
+    <h2>Edit Product</h2>
+    <form (ngSubmit)="updateProduct()">
+      <label for="editName">Name:</label>
+      <input id="editName" [(ngModel)]="editProduct.name" name="editName" required>
+      
+      <label for="editPrice">Price:</label>
+      <input id="editPrice" type="number" [(ngModel)]="editProduct.price" name="editPrice" required>
+      
+      <label for="editCategoryId">Category:</label>
+      <select id="editCategoryId" [(ngModel)]="editProduct.categoryId" name="editCategoryId" required>
+        <option *ngFor="let category of categories" [value]="category.id">{{ category.name }}</option>
+      </select>
+      
+      <button type="submit">Update Product</button>
+      <button type="button" (click)="editProduct = null">Cancel</button>
+    </form>
+</div>
+
+<div *ngIf="cart.length > 0">
+    <h2>Your Cart</h2>
+    <div *ngFor="let item of cart">
+        <p>{{ item.productName }} ({{ item.quantity }}) - {{ item.productPrice | currency }} each
+        <button (click)="removeFromCart(item.productId)">Remove</button></p>
+    </div>
+    <p>Total: {{ getTotalPrice() }}</p>
+    <button (click)="placeOrder()">Place Order</button>
+  </div>

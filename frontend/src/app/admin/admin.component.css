@@ -1,0 +1,9 @@
+h1 {
+    text-align: center;
+}
+
+.admin-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

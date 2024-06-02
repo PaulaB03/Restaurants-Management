@@ -1,1 +1,15 @@
-<p>profile works!</p>
+<div *ngIf="orders.length > 0">
+    <h2>Your Past Orders</h2>
+    <div *ngFor="let order of orders">
+      <h3>Restaurant {{ order.restaurantName}} - Data {{ order.orderDate | date:'dd/MM HH:mm' }}</h3>
+      <p>Total: {{ order.totalPrice }}</p>
+      <div *ngFor="let item of order.orderItems">
+        <p>{{ item.productName }} ({{ item.quantity }}) - {{ item.productPrice | currency }} each</p>
+      </div>
+      <button (click)="deleteOrder(order.orderId!)">Delete Order</button>
+    </div>
+  </div>
+  <div *ngIf="orders.length === 0">
+    <p>No past orders found.</p>
+  </div>
+  

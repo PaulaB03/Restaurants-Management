@@ -30,21 +30,16 @@ Manageri de restaurante interesați de un instrument eficient pentru gestionarea
 - [ ] Gestionare profil
 - [ ] Căutare restaurante și meniuri
 - [ ] Plasare comenzi
-- [ ] Urmărire comenzi în timp real
 - [ ] Opțiuni multiple de plată
 - [ ] Istoric comenzi
 - [ ] Evaluări și recenzii pentru restaurante
-- [ ] Notificări în timp real despre starea comenzii
 
 ### Proprietari de restaurante
 
 - [ ] Înregistrare restaurant 
 - [ ] Gestionare profil
 - [ ] Personalizare și gestionare meniu
-- [ ] Primire și gestionare comenzi
-- [ ] Actualizare status comandă și estimare timp livrare
 - [ ] Răspuns la recenzii
-- [ ] Comunicare în timp real cu clienții
 - [ ] Analize de performanță
 
 ## Cerinte nefuncționale

@@ -51,7 +51,10 @@ export class ProfileComponent {
   getUserOrders(): void {
     this.apiService.getOrders(this.userId!).subscribe({
       next: (orders: Order[]) => {
-        this.orders = orders;
+        this.orders = orders.sort((a, b) => {
+          return new Date(b.orderDate!).getTime() - new Date(a.orderDate!).getTime();
+        });
+        
         this.orders.forEach(order => {
           // Fetch restaurant details
           this.apiService.getRestaurantById(order.restaurantId).subscribe({

@@ -1,37 +1,29 @@
-<div *ngIf="restaurant">
+<div class="body">
+  <i (click)="checkCart()" *ngIf="!isOwner" class="fa-solid fa-utensils fa-2xl cartIcon"></i>
+  <span class="cart-bubble" *ngIf="cart.length > 0">{{ getTotalItems() }}</span>
+  <i (click)="activateAdd()" *ngIf="isOwner" class="fa-solid fa-plus fa-2xl cartIcon"></i>
+
+<div *ngIf="restaurant" class="restaurant">
     <h1>{{ restaurant.name }}</h1>
 
-    <div *ngIf="isOwner">
-        <h2>Add New Product</h2>
-        <form (ngSubmit)="addProduct()">
-          <label for="name">Name:</label>
-          <input id="name" [(ngModel)]="newProduct.name" name="name" required>
-          
-          <label for="price">Price:</label>
-          <input id="price" type="number" [(ngModel)]="newProduct.price" name="price" required>
-          
-          <label for="categoryId">Category:</label>
-          <select id="categoryId" [(ngModel)]="newProduct.categoryId" name="categoryId" required>
-            <option *ngFor="let category of allCategories" [value]="category.id">{{ category.name }}</option>
-          </select>
-          
-          <button type="submit">Add Product</button>
-        </form>
-    </div>
+    <div class="products">
+      <div *ngFor="let category of categories">
+          <h2 class="category">{{ category.name }}</h2>
+          <div class="product" *ngFor="let product of category.products">
+            <div class="info">
+              <p class="name">{{ product.name }}</p>
+              <div class="underline"></div>
+              <p class="price">{{ product.price | currency }}</p>
+            </div>
+            
+            <i  *ngIf="userId != null && !isOwner" (click)="addToCart(product)" class="fa-solid fa-plus" style="margin-left: 1.5vh;"></i>
 
-    <div *ngFor="let category of categories">
-        <div *ngIf="category.products.length > 0">
-          <h2>{{ category.name }}</h2>
-          <div *ngFor="let product of category.products">
-            <h3>{{ product.name }}</h3>
-            <p>Price: {{ product.price | currency }}</p>
-            <button *ngIf="userId != null && !isOwner" (click)="addToCart(product)">Add to Cart</button>
-            <div *ngIf="isOwner">
-              <button (click)="startEditProduct(product)">Update Product</button>
-              <button (click)="deleteProduct(product.id!)">Delete Product</button>
+            <div class="icons" *ngIf="isOwner">
+              <i (click)="startEditProduct(product)" class="fa-solid fa-pen-to-square"></i>
+              <i (click)="deleteProduct(product.id!)" class="fa-solid fa-trash"></i>
             </div>
           </div>
-        </div>
+      </div>
     </div>
 </div>
 
@@ -39,31 +31,71 @@
     <p>Loading restaurant details...</p>
 </div>
 
-<div *ngIf="isOwner && editProduct">
+<div class="cart addForm" *ngIf="isOwner && editProduct">
+  <i (click)="editProduct = null" class="fa-solid fa-xmark closeIcon"></i>
     <h2>Edit Product</h2>
     <form (ngSubmit)="updateProduct()">
-      <label for="editName">Name:</label>
-      <input id="editName" [(ngModel)]="editProduct.name" name="editName" required>
+      <div class="row">
+        <label for="editName">Name:</label>
+        <input id="editName" [(ngModel)]="editProduct.name" name="editName" required>
+      </div>
       
-      <label for="editPrice">Price:</label>
-      <input id="editPrice" type="number" [(ngModel)]="editProduct.price" name="editPrice" required>
+      <div class="row">
+        <label for="editPrice">Price:</label>
+        <input id="editPrice" type="number" [(ngModel)]="editProduct.price" name="editPrice" required>
+      </div>
       
-      <label for="editCategoryId">Category:</label>
-      <select id="editCategoryId" [(ngModel)]="editProduct.categoryId" name="editCategoryId" required>
-        <option *ngFor="let category of categories" [value]="category.id">{{ category.name }}</option>
-      </select>
-      
-      <button type="submit">Update Product</button>
-      <button type="button" (click)="editProduct = null">Cancel</button>
+      <button class="btnOrder" type="submit">Update Product</button>
     </form>
 </div>
 
-<div *ngIf="cart.length > 0">
-    <h2>Your Cart</h2>
-    <div *ngFor="let item of cart">
-        <p>{{ item.productName }} ({{ item.quantity }}) - {{ item.productPrice | currency }} each
-        <button (click)="removeFromCart(item.productId)">Remove</button></p>
+<div class="cart addForm" *ngIf="isOwner && activateAddForm">
+  <i (click)="activateAdd()" class="fa-solid fa-xmark closeIcon"></i>
+  <h2>Add New Product</h2>
+  <form (ngSubmit)="addProduct()">
+    <div class="row">
+      <label for="name">Name:</label>
+      <input id="name" [(ngModel)]="newProduct.name" name="name" required>
     </div>
-    <p>Total: {{ getTotalPrice() }}</p>
-    <button (click)="placeOrder()">Place Order</button>
+    
+    <div class="row">
+      <label for="price">Price:</label>
+      <input id="price" type="number" [(ngModel)]="newProduct.price" name="price" required>
+    </div>
+    
+    <div class="row">
+      <label for="categoryId">Category:</label>
+      <select id="categoryId" [(ngModel)]="newProduct.categoryId" name="categoryId" required>
+        <option *ngFor="let category of allCategories" [value]="category.id">{{ category.name }}</option>
+      </select>
+    </div>
+    
+    <button class="btnOrder" type="submit">Add Product</button>
+  </form>
+</div>
+
+<div class="cart" *ngIf="this.cart.length > 0 && this.activeCart">
+    <i (click)="checkCart()" class="fa-solid fa-xmark closeIcon"></i>
+    <h2>Your Order</h2>
+
+    <div class="line">
+      <p>Product</p>
+      <p>Quantity</p>
+      <p>Price</p>
+      <p>Total</p>
+    </div>
+
+    <div *ngFor="let item of cart" class="line">
+        <p>{{ item.productName }}</p>
+        <p>{{ item.quantity }}</p>
+        <p>{{ item.productPrice | currency }}</p>
+        <p>{{ item.productPrice! * item.quantity! | currency }}</p>
+        <div class="quantity-controls">
+          <i class="fas fa-minus" (click)="decreaseQuantity(item.productId)"></i>
+          <i class="fas fa-plus" (click)="increaseQuantity(item.productId)"></i>
+        </div>
+    </div>
+    <p class="total">{{ getTotalPrice() | currency }}</p>
+    <button class="btnOrder" (click)="placeOrder()">Place Order</button>
   </div>
+</div>

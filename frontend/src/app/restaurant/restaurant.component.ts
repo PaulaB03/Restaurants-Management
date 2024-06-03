@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ApiService } from '../services/api.service';
 import { CommonModule } from '@angular/common';
@@ -51,6 +51,8 @@ export class RestaurantComponent {
   editProduct: Product | null = null;
   cart: OrderItem[] = []; 
   newOrder: Order | null = null;
+  activeCart: boolean = false;
+  activateAddForm: boolean = false;
 
   newProduct: Product = {
     name: '',
@@ -59,7 +61,7 @@ export class RestaurantComponent {
     categoryId: 0
   };
 
-  constructor(private route: ActivatedRoute, private router: Router, private apiService: ApiService, private authService: AuthService) {}
+  constructor(private route: ActivatedRoute, private router: Router, private apiService: ApiService, private authService: AuthService, private renderer: Renderer2) {}
 
   ngOnInit(): void {
     this.authService.getUserByEmail().subscribe({
@@ -173,6 +175,14 @@ export class RestaurantComponent {
   }
 
   addToCart(product: Product): void {
+    const cartIcon = document.querySelector('.cartIcon');
+      if (cartIcon) {
+        this.renderer.addClass(cartIcon, 'shake');
+        setTimeout(() => {
+          this.renderer.removeClass(cartIcon, 'shake');
+        }, 500);
+      }
+
     const existingItem = this.cart.find(item => item.productId === product.id);
     if (existingItem) {
       existingItem.quantity++;
@@ -213,5 +223,37 @@ export class RestaurantComponent {
 
   getTotalPrice(): number {
     return this.cart.reduce((total, item) => total + (item.productPrice! * item.quantity), 0);
+  }
+
+  checkCart() {
+    this.activeCart = !this.activeCart;
+
+    if (this.cart.length == 0)
+      this.activeCart = false;
+  }
+
+  increaseQuantity(productId: number): void {
+    const item = this.cart.find(i => i.productId === productId);
+    if (item) {
+      item.quantity++;
+    }
+  }
+
+  decreaseQuantity(productId: number): void {
+    const item = this.cart.find(i => i.productId === productId);
+    if (item) {
+      item.quantity--;
+      if (item.quantity === 0) {
+        this.removeFromCart(productId);
+      }
+    }
+  }
+
+  activateAdd() {
+    this.activateAddForm = !this.activateAddForm;
+  }
+
+  getTotalItems(): number {
+    return this.cart.reduce((total, item) => total + item.quantity, 0);
   }
 }

@@ -1,17 +1,17 @@
-<div *ngIf="restaurants.length > 0">
+<div class="container1" *ngIf="restaurants.length > 0">
     <div *ngFor="let restaurant of restaurants" class="restaurant" (click)="navigateToRestaurant(restaurant.id)">
-        <img [src]="restaurant.imageUrl ? restaurant.imageUrl : 'assets/default-photo.jpg'" alt="{{ restaurant.name }}">
+        <img class="image" [src]="restaurant.imageUrl ? restaurant.imageUrl : 'assets/default-photo.jpg'" alt="{{ restaurant.name }}">
       <h3>{{ restaurant.name }}</h3>
       <p>{{ restaurant.description }}</p>
       <div *ngIf="restaurant.address">
-        <p>{{ formatAddress(restaurant.address) }}</p>
+        <p class="p2">{{ formatAddress(restaurant.address) }}</p>
       </div>
       <div *ngIf="!restaurant.address">
-        <p>Address not available.</p>
+        <p class="p2">Address not available.</p>
       </div>
       
     </div>
-  </div>
+</div>
   <div *ngIf="restaurants.length === 0">
     <p>No restaurants available.</p>
   </div>

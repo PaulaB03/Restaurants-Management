@@ -1,7 +1,7 @@
 .body {
     position: relative;
     color: #17252a;
-    
+    height: 93%;
 }
 
 .restaurant {
@@ -128,6 +128,7 @@ h2 {
     overflow-y: auto;
     padding: 0 2vw;
     color: aliceblue;
+    margin-top: 200px;
 }
 
 .line {

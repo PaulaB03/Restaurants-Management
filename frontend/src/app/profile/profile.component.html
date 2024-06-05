@@ -1,8 +1,8 @@
-<div *ngIf="orders.length > 0">
+<div *ngIf="orders.length > 0" class="container">
     <h2>Your Past Orders</h2>
-    <div *ngFor="let order of orders">
+    <div *ngFor="let order of orders" class="container1">
       <h3>Restaurant {{ order.restaurantName}} - Data {{ order.orderDate | date:'dd/MM HH:mm' }}</h3>
-      <p>Total: {{ order.totalPrice }}</p>
+      <p class="total">Total: {{ order.totalPrice }}</p>
       <div *ngFor="let item of order.orderItems">
         <p>{{ item.productName }} ({{ item.quantity }}) - {{ item.productPrice | currency }} each</p>
       </div>

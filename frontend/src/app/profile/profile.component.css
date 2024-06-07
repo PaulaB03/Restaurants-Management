@@ -1,60 +1,97 @@
-.container {
-    border-radius: 10px;
-    position: absolute;
+.main {
     display: flex;
     flex-direction: column;
-    top: 15%;
-    left: 50%;
-    width: 35vw;
-    transform: translate(-50%, -50%);
-    border: 2px solid #125d5b;
+    height: 93%;
+    align-items: center;
+}
+
+.container {
+    width: 90vw;
+    padding: 0 5vw;
+    height: 83vh;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5vw;
+    grid-row-gap: 4vh;
+    padding-bottom: 5vh;
+}
+
+.cart {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
     z-index: 20;
     background: #2b7a78;
-    max-height: 60Vh;
     overflow-y: auto;
     padding: 0 2vw;
     color: aliceblue;
-    margin-top: 220px;
-    justify-content: center;
-}
-
-.container1 {
-    border-bottom: 2px solid white;
-    display: flex;
-    flex-direction: column;
-}
-
-button {
-    cursor: pointer;
-    background-color: #1e6e6c;
-    color: white;
-    border-radius: 10px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    border: 1.5px solid white;
-    align-self: center;
+    height: 36vh;
+    overflow: auto;
 }
 
 button:hover {
-    background-color: #3d7b7a;
+    background-color: #3aafa9;
 }
 
 h2 {
-    margin-top: 90px;
     text-align: center;
-    font-size: 25px;
+    font-size: 4vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 
 h3 {
     text-align: center;
-    letter-spacing: 1px;
+}
+
+.line {
+    display: grid;
+    grid-template-columns: 2fr repeat(4, 1fr);
+    height: 5vh;
+    border-bottom: 1px dashed;
+
+    * {
+        text-align: center;
+    }
 }
 
 .total {
-    font-weight: bold;
+    color: aliceblue;
+    text-align: end;
+    margin-right: 21%;
 }
 
-p {
-    margin-bottom: 5px;
+.btnOrder {
+    cursor: pointer;
+    font-size: 18px;
+    width: 75%;
+    margin: 0 auto 3vh auto;
+    height: 5vh;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: #3aafa9;
+    color: white;
+    border: none;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+    flex-shrink: 0;
+}
+
+*::-webkit-scrollbar {
+    width: 15px;
+}
+  
+*::-webkit-scrollbar-track {
+    background: #45555b7a;
+    border-radius: 15px;
+}
+  
+*::-webkit-scrollbar-thumb {
+    background: #0b4346db;
+    border-radius: 15px;
+}
+  
+*::-webkit-scrollbar-thumb:hover {
+    background: #072f31;
 }

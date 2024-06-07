@@ -1,4 +1,25 @@
+.body {
+    height: 93%;
+    overflow: auto;
+}
+
 .restaurant {
     border: 1px solid black;
     cursor: pointer;
+}
+
+*::-webkit-scrollbar {
+    width: 15px;
+}
+  
+*::-webkit-scrollbar-track {
+    background: #45555b7a;
+}
+  
+*::-webkit-scrollbar-thumb {
+    background: #0b4346db;
+}
+  
+*::-webkit-scrollbar-thumb:hover {
+    background: #072f31;
 }

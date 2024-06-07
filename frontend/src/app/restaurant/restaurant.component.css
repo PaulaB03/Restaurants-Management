@@ -47,6 +47,10 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 1.5vh;
+
+    i {
+        margin-left: 10px;
+    }
 }
 
 .info {
@@ -128,7 +132,6 @@ h2 {
     overflow-y: auto;
     padding: 0 2vw;
     color: aliceblue;
-    margin-top: 200px;
 }
 
 .line {
@@ -151,7 +154,7 @@ h2 {
 .total {
     color: aliceblue;
     text-align: end;
-    margin-right: 20%;
+    margin-right: 21%;
 }
 
 .btnOrder {
@@ -166,6 +169,10 @@ h2 {
     color: white;
     border: none;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.btnOrder:hover {
+    background-color: #52cec8;
 }
 
 .closeIcon {

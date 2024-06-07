@@ -1,15 +1,30 @@
-<div *ngIf="orders.length > 0" class="container">
+<div *ngIf="orders.length > 0" class="main">
     <h2>Your Past Orders</h2>
-    <div *ngFor="let order of orders" class="container1">
-      <h3>Restaurant {{ order.restaurantName}} - Data {{ order.orderDate | date:'dd/MM HH:mm' }}</h3>
-      <p class="total">Total: {{ order.totalPrice }}</p>
-      <div *ngFor="let item of order.orderItems">
-        <p>{{ item.productName }} ({{ item.quantity }}) - {{ item.productPrice | currency }} each</p>
+    <div class="container">
+      <div *ngFor="let order of orders" class="cart">
+        <h3>Restaurant {{ order.restaurantName}} - Data {{ order.orderDate | date:'dd/MM HH:mm' }}</h3>
+
+        <div class="line">
+          <p>Product</p>
+          <p>Quantity</p>
+          <p>Price</p>
+          <p>Total</p>
+        </div>
+
+        <div *ngFor="let item of order.orderItems" class="line">
+          <p>{{ item.productName }}</p>
+          <p>{{ item.quantity }}</p>
+          <p>{{ item.productPrice | currency }}</p>
+          <p>{{ item.productPrice! * item.quantity! | currency }}</p>
+        </div>
+
+        <p class="total">{{ order.totalPrice | currency }}</p>
+        <button class="btnOrder" (click)="deleteOrder(order.orderId!)">Delete Order</button>
       </div>
-      <button (click)="deleteOrder(order.orderId!)">Delete Order</button>
     </div>
-  </div>
-  <div *ngIf="orders.length === 0">
-    <p>No past orders found.</p>
-  </div>
+</div>
+
+<div *ngIf="orders.length === 0">
+  <h2>No past orders found.</h2>
+</div>
   

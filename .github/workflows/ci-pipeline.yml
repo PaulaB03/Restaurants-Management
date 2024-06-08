@@ -11,9 +11,9 @@ jobs:
     runs-on: windows-latest
 
     env:
-      Solution_Name: backend/backend.sln
-      Wap_Project_Directory: backend
-      Wap_Project_Path: backend/backend.csproj
+      Solution_Name: ../backend/backend.sln
+      Wap_Project_Directory: ../backend
+      Wap_Project_Path: ../backend/backend.csproj
 
     steps:
       - name: Checkout

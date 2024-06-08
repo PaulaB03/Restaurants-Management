@@ -1,0 +1,56 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  backend_build:
+    runs-on: windows-latest
+
+    env:
+      Solution_Name: backend/backend.sln
+      Wap_Project_Directory: backend
+      Wap_Project_Path: backend/backend.csproj
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          path: backend
+
+      - name: Install .NET Core
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Build Solution
+        run: dotnet build ${{ env.Solution_Name }} --configuration Release
+
+  frontend_build:
+    runs-on: windows-latest
+    needs: [backend_build]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          path: frontend
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14.x"
+
+      - name: Install Angular CLI
+        run: npm install -g @angular/cli
+        working-directory: frontend
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: frontend
+
+      - name: Build Angular app
+        run: ng build --configuration=production
+        working-directory: frontend

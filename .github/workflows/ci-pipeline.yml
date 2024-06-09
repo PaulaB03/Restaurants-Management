@@ -11,15 +11,15 @@ jobs:
     runs-on: windows-latest
 
     env:
-      Solution_Name: backend.sln
-      Wap_Project_Directory: .
+      Solution_Name: backend/backend.sln
+      Wap_Project_Directory: backend
       Wap_Project_Path: backend/backend.csproj
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          path: .
+          path: backend
 
       - name: Install .NET Core
         uses: actions/setup-dotnet@v4
@@ -31,7 +31,6 @@ jobs:
 
   frontend_build:
     runs-on: windows-latest
-    needs: [backend_build]
     steps:
       - name: Checkout code
         uses: actions/checkout@v4

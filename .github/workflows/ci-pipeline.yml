@@ -21,6 +21,9 @@ jobs:
         with:
           path: backend
 
+      - name: List Backend Directory
+        run: dir backend
+
       - name: Install .NET Core
         uses: actions/setup-dotnet@v4
         with:
@@ -31,11 +34,15 @@ jobs:
 
   frontend_build:
     runs-on: windows-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
           path: frontend
+
+      - name: List Frontend Directory
+        run: dir frontend
 
       - name: Set up Node.js
         uses: actions/setup-node@v2

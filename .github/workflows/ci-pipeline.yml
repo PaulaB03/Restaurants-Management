@@ -18,8 +18,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          path: backend
 
       - name: List Backend Directory
         run: dir backend
@@ -38,8 +36,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        with:
-          path: frontend
 
       - name: List Frontend Directory
         run: dir frontend
@@ -47,7 +43,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "14.x"
+          node-version: "18.x"
 
       - name: Install Angular CLI
         run: npm install -g @angular/cli

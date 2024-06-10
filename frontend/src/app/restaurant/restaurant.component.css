@@ -95,6 +95,10 @@ i {
     cursor: pointer;
 }
 
+.cartIcon:hover {
+    font-size: 35px;
+}
+
 .cart-bubble {
     position: absolute;
     top: 1.5vh;
@@ -241,4 +245,8 @@ input::-webkit-inner-spin-button {
     label {
         width: 25%;
     }
+}
+
+.ic:hover {
+    font-size: 18px;
 }

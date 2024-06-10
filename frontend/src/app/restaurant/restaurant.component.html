@@ -16,11 +16,11 @@
               <p class="price">{{ product.price | currency }}</p>
             </div>
             
-            <i  *ngIf="userId != null && !isOwner" (click)="addToCart(product)" class="fa-solid fa-plus" style="margin-left: 1.5vh;"></i>
+            <i  *ngIf="userId != null && !isOwner" (click)="addToCart(product)" class="fa-solid ic fa-plus" style="margin-left: 1.5vh;"></i>
 
             <div class="icons" *ngIf="isOwner">
-              <i (click)="startEditProduct(product)" class="fa-solid fa-pen-to-square"></i>
-              <i (click)="deleteProduct(product.id!)" class="fa-solid fa-trash"></i>
+              <i (click)="startEditProduct(product)" class="fa-solid ic fa-pen-to-square"></i>
+              <i (click)="deleteProduct(product.id!)" class="fa-solid ic fa-trash"></i>
             </div>
           </div>
       </div>

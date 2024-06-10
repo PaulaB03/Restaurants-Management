@@ -1,10 +1,30 @@
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #e8f0fe;
-    margin: 0;
-    padding: 20px;
-    color: #333;
-    line-height: 1.6;
+.body {
+    height: 93%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.restaurant {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+*::-webkit-scrollbar {
+    width: 15px;
+}
+  
+*::-webkit-scrollbar-track {
+    background: #45555b7a;
+}
+  
+*::-webkit-scrollbar-thumb {
+    background: #0b4346db;
+}
+  
+*::-webkit-scrollbar-thumb:hover {
+    background: #072f31;
 }
 
 h2 {
@@ -15,21 +35,13 @@ h2 {
     font-size: 24px;
 }
 
-.body {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-}
-
 .addRestaurant {
     background: #f0f8ff;
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 600px;
+    width: 60%;
     margin: 10px;
     box-sizing: border-box;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -70,18 +82,18 @@ input[type="url"] {
     max-width: 500px;
     padding: 15px;
     border: 1px solid #007bff;
-    border-radius: 25px; /* Rounded corners */
+    border-radius: 25px; 
     box-sizing: border-box;
     font-size: 16px;
-    background-color: #4e878c; /* Background color */
-    color: #fff; /* Text color */
-    text-align: center; /* Centered text */
+    background-color: #4e878c; 
+    color: #fff;
+    text-align: center; 
     transition: all 0.3s ease;
 }
 
 input[type="text"]::placeholder,
 input[type="url"]::placeholder {
-    color: #b2dfdb; /* Placeholder text color */
+    color: #b2dfdb;
 }
 
 input[type="text"]:focus,
@@ -97,7 +109,7 @@ button {
     color: #fff;
     padding: 15px 20px;
     border: none;
-    border-radius: 25px; /* Rounded corners */
+    border-radius: 25px; 
     cursor: pointer;
     font-size: 18px;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -129,7 +141,7 @@ button:not(:disabled):hover {
     border-radius: 8px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 600px;
+    width: 85%;
     margin: 10px;
     box-sizing: border-box;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -182,13 +194,25 @@ button:not(:disabled):hover {
     transform: translateY(-2px);
 }
 
-@media (max-width: 768px) {
-    .body {
-        align-items: center;
-    }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3vw;
+    grid-row-gap: 3vh;
+}
 
-    .addRestaurant, .restaurants {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+input {
+    border: none;
+    outline: none;
+    height: 5vh;
+    width: 75%;
+    background-color: #77c8c5;
+    border-radius: 10px;
+    font-size: 16.5px;
+    color: white;
+    text-align: center;
+}
+
+.ic:hover {
+    font-size: 18px;
 }

@@ -11,50 +11,58 @@
           Restaurant name is required.
         </div>
       </div>
+
       <div>
-        <label for="description">Description:</label>
-        <input id="description" formControlName="description" placeholder="Enter description">
-      </div>
-      <div>
-        <label for="imageUrl">Image URL:</label>
-        <input id="imageUrl" formControlName="imageUrl" placeholder="Enter image URL">
-      </div>
-      <div>
-        <label for="street">Street:</label>
-        <input id="street" formControlName="street" placeholder="Enter street">
-        <div *ngIf="restaurantForm.get('street')?.touched && restaurantForm.get('street')?.errors?.['required']">
-          Street is required.
+        <div>
+          <label for="description">Description:</label>
+          <input id="description" formControlName="description" placeholder="Enter description">
+        </div>
+        <div>
+          <label for="imageUrl">Image URL:</label>
+          <input id="imageUrl" formControlName="imageUrl" placeholder="Enter image URL">
+        </div>
+        <div>
+          <label for="street">Street:</label>
+          <input id="street" formControlName="street" placeholder="Enter street">
+          <div *ngIf="restaurantForm.get('street')?.touched && restaurantForm.get('street')?.errors?.['required']">
+            Street is required.
+          </div>
+        </div>
+        <div>
+          <label for="floor">Floor:</label>
+          <input id="floor" formControlName="floor" placeholder="Enter floor">
+        </div>
+        <div>
+          <label for="number">Number:</label>
+          <input id="number" formControlName="number" placeholder="Enter number">
+          <div *ngIf="restaurantForm.get('number')?.touched && restaurantForm.get('number')?.errors?.['required']">
+            Number is required.
+          </div>
+        </div>
+        <div>
+          <label for="city">City:</label>
+          <input id="city" formControlName="city" placeholder="Enter city">
+          <div *ngIf="restaurantForm.get('city')?.touched && restaurantForm.get('city')?.errors?.['required']">
+            City is required.
+          </div>
         </div>
       </div>
-      <div>
-        <label for="floor">Floor:</label>
-        <input id="floor" formControlName="floor" placeholder="Enter floor">
-      </div>
-      <div>
-        <label for="number">Number:</label>
-        <input id="number" formControlName="number" placeholder="Enter number">
-        <div *ngIf="restaurantForm.get('number')?.touched && restaurantForm.get('number')?.errors?.['required']">
-          Number is required.
-        </div>
-      </div>
-      <div>
-        <label for="city">City:</label>
-        <input id="city" formControlName="city" placeholder="Enter city">
-        <div *ngIf="restaurantForm.get('city')?.touched && restaurantForm.get('city')?.errors?.['required']">
-          City is required.
-        </div>
-      </div>
+
+      
       <button type="submit" [disabled]="!restaurantForm.valid">Add Restaurant</button>
     </form>
   </div>
   
   <div class="restaurants">
     <h2>Your Restaurants</h2>
-    <div *ngFor="let restaurant of restaurants" class="restaurant" (click)="navigateToRestaurant(restaurant.id)">
+    <div class="grid">
+      <div *ngFor="let restaurant of restaurants" class="restaurant" (click)="navigateToRestaurant(restaurant.id)">
         <h3>{{ restaurant.name }}</h3>
         <p>{{ restaurant.description }}</p>
         <p>{{ restaurant.address.street }}, {{ restaurant.address.number }}, {{ restaurant.address.city }}</p>
         <button (click)="deleteRestaurant(restaurant.id)">Delete Restaurant</button>
     </div>
+    </div>
+    
   </div>
 </div>

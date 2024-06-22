@@ -1,4 +1,4 @@
-# Food Delivery App
+# Restaurants Management App
 
 ## Scopul aplicației
 

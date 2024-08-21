@@ -74,46 +74,36 @@ Manageri de restaurante interesați de un instrument eficient pentru gestionarea
 Pentru monitorizrea obiectivelor/cerințelor utilizam aplicația Trello.
 https://trello.com/b/h1FAhJXJ/yummy
 
-### Proritatea cerințelor
-
-<p align="center">
-  <img src="https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-paea/blob/main/roadmap.jpg">
-</p>
-
-<p align="center">
-<img src="https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-paea/blob/main/Roadmap.png">
-</p>
-
 ### Diagrama workflow
 
 <p align="center">
-  <img src="https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-paea/blob/main/diagram_workflow.jpg">
+  <img src="https://github.com/PaulaB03/Restaurants-Management/blob/main/diagram_workflow.jpg">
 </p>
 
 ### Customer Journey Map
 
 <p align="center">
-  <img src="https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-paea/blob/main/Customer%20Journey%20Map.jpg">
+  <img src="https://github.com/PaulaB03/Restaurants-Management/blob/main/Customer%20Journey%20Map.jpg">
 </p>
 
 ### User Personas
 
 <p align="center">
-  <img src="https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-paea/blob/main/User%20Persona%201.jpg">
+  <img src="https://github.com/PaulaB03/Restaurants-Management/blob/main/User%20Persona%201.jpg">
 </p>
 
 <p align="center">
-  <img src="https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-paea/blob/main/User%20Persona%202.jpg">
+  <img src="https://github.com/PaulaB03/Restaurants-Management/blob/main/User%20Persona%202.jpg">
 </p>
 
 ### Baza de Date
 
 <p align="center">
-<img src="https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-paea/blob/main/Baza%20de%20Date.jpg">
+<img src="https://github.com/PaulaB03/Restaurants-Management/blob/main/Baza%20de%20Date.jpg">
 </p>
 
 ### Diagrama UML
 
 <p align="center">
-<img src="https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-paea/blob/main/UML%20diagram.png">
+<img src="https://github.com/PaulaB03/Restaurants-Management/blob/main/UML%20diagram.png">
 </p>
